@@ -31,7 +31,7 @@ export default defineConfig({
       },
     ],
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/YOUR_ORG/camera2d' },
+      { icon: 'github', link: 'https://github.com/gwenjs/camera2D' },
     ],
   },
 })
