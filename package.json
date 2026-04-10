@@ -1,0 +1,46 @@
+{
+  "name": "@gwenjs/camera2d",
+  "version": "0.1.0",
+  "description": "Camera2d plugin for GWEN",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./module": {
+      "types": "./dist/module.d.ts",
+      "import": "./dist/module.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "lint": "oxlint src/",
+    "format": "oxfmt src/",
+    "format:check": "oxfmt --check src/",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "dependencies": {
+    "@gwenjs/core": "^0.1.0",
+    "@gwenjs/kit": "^0.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.0",
+    "vite": "^8.0.0",
+    "vite-plugin-dts": "^4.0.0",
+    "vitest": "^4.0.0",
+    "oxlint": "latest",
+    "oxfmt": "latest",
+    "vitepress": "latest"
+  }
+}
