@@ -14,5 +14,6 @@ export function useCamera2d(): Camera2dService {
   throw new GwenPluginNotFoundError({
     pluginName: '@gwenjs/camera2d',
     hint: "Add '@gwenjs/camera2d' to modules in gwen.config.ts",
+    docsUrl: 'https://gwenengine.dev/camera2D/guide/getting-started',
   })
 }

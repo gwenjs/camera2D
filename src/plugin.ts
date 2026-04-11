@@ -1,4 +1,4 @@
-import { definePlugin } from '@gwenjs/kit'
+import { definePlugin } from '@gwenjs/kit/plugin'
 import type { GwenEngine } from '@gwenjs/core'
 import type { Camera2dConfig, Camera2dService } from './types'
 
