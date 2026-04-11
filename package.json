@@ -1,6 +1,6 @@
 {
   "name": "@gwenjs/camera2d",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Camera2D plugin for GWEN",
   "type": "module",
   "repository": {
