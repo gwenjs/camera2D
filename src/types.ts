@@ -1,3 +1,4 @@
+import type { CameraWaypoint, PathOpts } from '@gwenjs/camera-core'
 import type { EntityId } from '@gwenjs/core'
 import type { Vec2 } from '@gwenjs/math'
 
@@ -22,16 +23,9 @@ export interface Use2DCameraOpts {
 export interface Camera2DHandle {
   follow(targetId: EntityId, opts?: { lerp?: number; offset?: Vec2 }): void
   setPosition(x: number, y: number): void
-  playPath(
-    waypoints: Array<{ position: Vec2; zoom?: number; duration: number }>,
-    opts?: {
-      loop?: boolean
-      onComplete?: () => void
-      onWaypoint?: (index: number) => void
-    },
-  ): void
+  playPath(waypoints: CameraWaypoint[], opts?: PathOpts): void
   setZoom(zoom: number): void
-  setBounds(rect: Rect): void
+  setBounds(rect: Rect | null): void
   setViewport(viewportId: string): void
   shake(intensity: number): void
   activate(): void
