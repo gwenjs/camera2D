@@ -1,38 +1,10 @@
-import * as core from '@gwenjs/core'
-import * as rendererCore from '@gwenjs/renderer-core'
-
-export interface CameraState {
-  worldTransform: {
-    position: {
-      x: number
-      y: number
-      z: number
-    }
-    rotation: {
-      x: number
-      y: number
-      z: number
-    }
-  }
-  projection: unknown
-  viewportId: string
-  active: boolean
-  priority: number
-  [key: string]: unknown
-}
-
-type CameraManagerLike = {
-  get: (viewportId: string) => CameraState | undefined
-  set: (viewportId: string, state: CameraState) => void
-}
-
-type RendererCoreWithCameraManager = typeof rendererCore & {
-  useCameraManager: () => CameraManagerLike
-}
+import * as core from "@gwenjs/core";
+import * as rendererCore from "@gwenjs/renderer-core";
+import type { CameraState } from "@gwenjs/renderer-core";
 
 type CoreWithAfterUpdate = typeof core & {
-  onAfterUpdate: (callback: (deltaMs: number) => void) => void
-}
+  onAfterUpdate: (callback: (deltaMs: number) => void) => void;
+};
 
 export function snapCameraToPixels(state: CameraState): CameraState {
   return {
@@ -45,19 +17,19 @@ export function snapCameraToPixels(state: CameraState): CameraState {
         y: Math.round(state.worldTransform.position.y),
       },
     },
-  }
+  };
 }
 
-export function usePixelPerfect(viewportId = 'main'): void {
-  const cameraManager = (rendererCore as RendererCoreWithCameraManager).useCameraManager()
+export function usePixelPerfect(viewportId = "main"): void {
+  const cameraManager = rendererCore.useCameraManager();
 
-  ;(core as CoreWithAfterUpdate).onAfterUpdate(() => {
-    const state = cameraManager.get(viewportId)
+  (core as CoreWithAfterUpdate).onAfterUpdate(() => {
+    const state = cameraManager.get(viewportId);
 
     if (!state || !state.active) {
-      return
+      return;
     }
 
-    cameraManager.set(viewportId, snapCameraToPixels(state))
-  })
+    cameraManager.set(viewportId, snapCameraToPixels(state));
+  });
 }

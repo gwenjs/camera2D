@@ -9,20 +9,20 @@ importers:
   .:
     dependencies:
       '@gwenjs/camera-core':
-        specifier: 0.1.0
-        version: 0.1.0
+        specifier: 0.1.2
+        version: 0.1.2
       '@gwenjs/core':
-        specifier: 0.2.0
-        version: 0.2.0
+        specifier: 0.2.2
+        version: 0.2.2
       '@gwenjs/kit':
-        specifier: 0.2.0
-        version: 0.2.0
+        specifier: 0.2.1
+        version: 0.2.1
       '@gwenjs/math':
         specifier: 0.1.1
         version: 0.1.1
       '@gwenjs/renderer-core':
-        specifier: 0.2.0
-        version: 0.2.0
+        specifier: 0.4.2
+        version: 0.4.2
     devDependencies:
       '@types/node':
         specifier: ^25.6.0
@@ -317,20 +317,20 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@gwenjs/camera-core@0.1.0':
-    resolution: {integrity: sha512-/noEV88yZjym1UnKrZDNdzUp97usx4m9O5Zwyp76Pa5+g2zE45IiZ29Q4EkEvMM3zUiHBpu7UGMcDPw1cG6hAg==}
+  '@gwenjs/camera-core@0.1.2':
+    resolution: {integrity: sha512-e0s7cRjk8oHy/67WYgGzYNolmurwoSD9ZVdKCbZz7UkPwMTZlJK8TQoBefuFgACoeO33bu5fNTDRamq/9JPyEg==}
 
-  '@gwenjs/core@0.2.0':
-    resolution: {integrity: sha512-z3nYndh8VINC/9YuKmrhh/mFZmoCeusKe+wy3zH9z1S+ky5OAHFoUuL8PxY469rw/qkEbHgPyGYKeVZzN4ykPg==}
+  '@gwenjs/core@0.2.2':
+    resolution: {integrity: sha512-+4qgKvNZuDEpk2DqV84S1K9tH4RWo7eIdGn6Rgk/KOTM5cuQITjvY4wvLQ5mjvW47BN1YgYe+Q2F7zaR/j51Ug==}
 
-  '@gwenjs/kit@0.2.0':
-    resolution: {integrity: sha512-k1yXWNSprTvDWSFlpz9+NKRCVmXlM6pSbpfsCAC1gIZtuxQgDzAttAb+05BxAMgVRGVdA1KQkV2jjr+JiRFS4g==}
+  '@gwenjs/kit@0.2.1':
+    resolution: {integrity: sha512-VKsquDozrJTcqNx4wWzd54RmTvxwm0BFQe4WiOTouqPIUcuL5h28ysCSK+L3oyxkjPtE0W+CYn6oOhKEbofjtw==}
 
   '@gwenjs/math@0.1.1':
     resolution: {integrity: sha512-LBz868ZBxvADW1zKaqqz8EJp70ouMesL5VJaze2ga6I9DlO3rOFMNPQSSFmmSdEYx+12crf2Q2CfVvJVTqvnQQ==}
 
-  '@gwenjs/renderer-core@0.2.0':
-    resolution: {integrity: sha512-OxkBq1HDJHt8BnsaFrHN+9d53OVLenO1wnOwRfi2fAeBzO+EVui+UcxLwVtvZbp4/fF78H3i3RYLfwgowIYstQ==}
+  '@gwenjs/renderer-core@0.4.2':
+    resolution: {integrity: sha512-idJZlq3evifEfaSRCEbn3zcm4JdJLHaU+wBFpw1RP4ZRsrTz6Vbg1bQcy9j+pdPpfdxunbtWzCqoAzHPeywfRw==}
 
   '@gwenjs/schema@0.1.1':
     resolution: {integrity: sha512-nPNl/iCn3vAZwOSgeWzVAPRtaztIFMvB7TNT0/yQ2tm8ropU02MbjOJwU3Tef2oP9/8HaF7x0bL+HVHR4d1vbQ==}
@@ -2121,30 +2121,30 @@ snapshots:
   '@esbuild/win32-x64@0.21.5':
     optional: true
 
-  '@gwenjs/camera-core@0.1.0':
+  '@gwenjs/camera-core@0.1.2':
     dependencies:
-      '@gwenjs/core': 0.2.0
-      '@gwenjs/kit': 0.2.0
+      '@gwenjs/core': 0.2.2
+      '@gwenjs/kit': 0.2.1
       '@gwenjs/math': 0.1.1
-      '@gwenjs/renderer-core': 0.2.0
+      '@gwenjs/renderer-core': 0.4.2
 
-  '@gwenjs/core@0.2.0':
+  '@gwenjs/core@0.2.2':
     dependencies:
       '@gwenjs/math': 0.1.1
       '@gwenjs/schema': 0.1.1
       hookable: 6.1.0
       unctx: 2.5.0
 
-  '@gwenjs/kit@0.2.0':
+  '@gwenjs/kit@0.2.1':
     dependencies:
-      '@gwenjs/core': 0.2.0
+      '@gwenjs/core': 0.2.2
       '@gwenjs/schema': 0.1.1
 
   '@gwenjs/math@0.1.1': {}
 
-  '@gwenjs/renderer-core@0.2.0':
+  '@gwenjs/renderer-core@0.4.2':
     dependencies:
-      '@gwenjs/core': 0.2.0
+      '@gwenjs/core': 0.2.2
 
   '@gwenjs/schema@0.1.1':
     dependencies:
