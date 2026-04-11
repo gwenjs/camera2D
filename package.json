@@ -35,11 +35,11 @@
     "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
-    "@gwenjs/camera-core": "0.1.0",
-    "@gwenjs/core": "0.2.0",
-    "@gwenjs/kit": "0.2.0",
+    "@gwenjs/camera-core": "0.1.2",
+    "@gwenjs/core": "0.2.2",
+    "@gwenjs/kit": "0.2.1",
     "@gwenjs/math": "0.1.1",
-    "@gwenjs/renderer-core": "0.2.0"
+    "@gwenjs/renderer-core": "0.4.2"
   },
   "devDependencies": {
     "@types/node": "^25.6.0",
