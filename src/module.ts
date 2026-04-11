@@ -8,7 +8,8 @@
  * Always import from './plugin.js' or './types.js' directly.
  */
 
-import { defineGwenModule, definePluginTypes } from '@gwenjs/kit'
+import { defineGwenModule } from '@gwenjs/kit/module'
+import { definePluginTypes } from '@gwenjs/kit/plugin'
 import type { Camera2dConfig } from './types'
 
 export default defineGwenModule<Camera2dConfig>({
