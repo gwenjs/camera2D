@@ -1,6 +1,7 @@
 {
   "name": "@gwenjs/camera2d",
   "version": "0.1.1",
+  "license": "MPL-2.0",
   "description": "Camera2D plugin for GWEN",
   "type": "module",
   "repository": {
@@ -8,7 +9,8 @@
     "url": "https://github.com/gwenjs/camera2D"
   },
   "files": [
-    "dist"
+    "dist",
+    "LICENSE"
   ],
   "exports": {
     ".": {
